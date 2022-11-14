@@ -1,0 +1,58 @@
+$primaryColor: #142d4c;
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #cecece;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $primaryColor;
+    border-radius: 10px;
+    width: calc(50%);
+    color: #fff;
+    text-align: center;
+    .score{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 5rem;
+        background: black;
+        width: 60%;
+    }
+    .column{
+        width: 49%;
+        h1{
+            text-transform: uppercase;
+        }
+        .scoreboard-button-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .score{
+                font-size: 50px;
+                color: red;
+            }
+            .buttons{
+                padding: 2rem;
+                button{
+                    color: lightgray;
+                    cursor: pointer;
+                    background: $primaryColor;
+                    padding: 0.5rem;
+                border: 1px solid lightgray;
+                border-radius: 2px;
+                }
+            }
+        }
+    }
+}
